@@ -9,13 +9,25 @@ html
 
   body
 
+    .navbar.navbar-inverse.navbar-fixed-top.navbar-transparent(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        .nav.navbar-nav.navbar-left
+          a(href="http://binzo.co/" target="blank")
+            img(src="images/logo_bnzk.png" alt="bnzklogo" class="logo-bnzk")
+
     .wrap
 
       block body
 
       section#footer
         .container.text-center
-          span &copy; #{1900 + new Date().getYear()} Dummy
+          span &copy; #{1900 + new Date().getYear()} Binzokomegane Girls Union
 
     if process.env.NODE_ENV == 'production'
       script(src='/application.js')
