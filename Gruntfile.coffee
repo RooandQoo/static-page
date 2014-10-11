@@ -103,6 +103,9 @@ module.exports = (grunt) ->
           filter: 'isFile'
           ext: '.html'
         }]
+      options:
+        data:
+          pretty: true
 
     cssmin:
       options:
