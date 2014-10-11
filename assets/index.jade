@@ -1,7 +1,8 @@
 extends templates/layout
 
 block body
-  section#top.section-top
+  #background
+  #top.section-top
     .container.text-center
       .main-image
         .enter-button
@@ -10,12 +11,8 @@ block body
         a(href="http://binzo.co/" target="blank")
           img(src="images/logo_bnzk.png" alt="bnzklogo" class="logo-bnzk")
 
-  section#main
-    subsection#image
-      .container.text-center
-        img(src='/images/main2.jpg')
-
-    subsection#intro.section-intro
+  #main
+    section#intro.section-intro
       .container.text-center
         h3 Introduction
         hr
@@ -35,7 +32,7 @@ block body
               td 頒布
               td M3-2014秋 A-15a "SKETCH UP! Recordings"
 
-    subsection#track.section-track
+    section#track.section-track
       .container.text-center
         h3 TrackList
         hr
@@ -94,7 +91,7 @@ block body
             td そば
 
 
-    subsection#staff.section-staff
+    section#staff.section-staff
       .container.text-center
         h3 Staff
         hr
@@ -166,9 +163,7 @@ block body
             td
             td Kasdf
 
+    section#footer
+      .container.text-center
+        span &copy; #{1900 + new Date().getYear()} Binzokomegane Girls Union
 
-
-
- 
-
- 

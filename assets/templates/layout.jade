@@ -13,10 +13,6 @@ html
 
       block body
 
-      section#footer
-        .container.text-center
-          span &copy; #{1900 + new Date().getYear()} Binzokomegane Girls Union
-
     if process.env.NODE_ENV == 'production'
       script(src='/application.js')
     else

@@ -9,9 +9,9 @@ define ['moment', 'jquery', 'lodash'], (moment, $, _) ->
 
     $btn.on 'click', ->
       $top.css
-        top: -1 * $top.height() + $navbar.height()
+        bottom: $top.height() - $navbar.height()
       console.log 'clicked'
 
     $navbar.on 'click', ->
       $top.css
-        top: 0
+        bottom: 0
