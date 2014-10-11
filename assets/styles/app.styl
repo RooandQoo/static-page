@@ -25,7 +25,15 @@ hr
   height 5px
 
 .navbar
+  position absolute
+  left 0
+  right 0
+  bottom 0
+  margin 0
+  height 50px
   border-width 0
+  background red
+  border-radius 0
   transition background 0.18s $easing
 
   .session .dropdown-toggle
@@ -35,10 +43,10 @@ hr
     background-repeat no-repeat
 
   &.navbar-transparent
-    background-color transparent
+    background-color red
     .navbar-toggle
       border-color transparent
-    .navbar-collapse
+    .navbar-collaps
       box-shadow none
       border-top-color transparent
 
@@ -59,3 +67,5 @@ img.logo-bnzk
     .container
       display table-cell
       vertical-align middle
+
+

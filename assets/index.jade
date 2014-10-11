@@ -3,7 +3,12 @@ extends templates/layout
 block body
   section#top.section-top
     .container.text-center
-      img(src='/images/main.jpg')
+      .main-image
+        .enter-button
+    .navbar(role='navigation')
+      .container
+        a(href="http://binzo.co/" target="blank")
+          img(src="images/logo_bnzk.png" alt="bnzklogo" class="logo-bnzk")
 
   section#main
     subsection#image

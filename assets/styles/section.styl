@@ -1,0 +1,26 @@
+@import '_config'
+
+.section-top
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  background-image url(/images/main.jpg)
+  background-repeat no-repeat
+  background-size cover
+  background-position 50% 50%
+
+  .enter-button
+    position absolute
+    top 50%
+    left 50%
+    width 300px
+    height 150px
+    margin-top (-1 * @height / 2)
+    margin-left (-1 * @width / 2)
+    background green
+    cursor pointer
+    &:hover
+      background-color lighten(green, 20%)
+
