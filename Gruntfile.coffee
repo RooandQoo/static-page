@@ -104,8 +104,7 @@ module.exports = (grunt) ->
           ext: '.html'
         }]
       options:
-        data:
-          pretty: true
+        pretty: true
 
     cssmin:
       options:
