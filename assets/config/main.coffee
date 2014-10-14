@@ -7,14 +7,19 @@ define ['moment', 'jquery', 'lodash'], (moment, $, _) ->
     $btn = $ '.enter-button'
     $navbar = $ '.navbar'
 
-    $btn.on 'click', ->
+    hideCover = (toggle) ->
       height = $top.height() - $navbar.height()
-      $top.css
-        marginTop: -1 * height
-        marginBottom: height
-      console.log 'clicked'
+      $top
+        .toggleClass 'transition', toggle
+        .css marginTop: -1 * height, marginBottom: height
 
-    $navbar.on 'click', ->
-      $top.css
-        marginTop: 0
-        marginBottom: 0
+    showCover = ->
+      $top
+        .addClass 'transition'
+        .css marginTop: 0, marginBottom: 0
+
+    ($ window).on 'resize', ->
+      hideCover false
+    $btn.on 'click', ->
+      hideCover true
+    $navbar.on 'click', showCover
