@@ -1,8 +1,7 @@
 'use strict'
 
-util = require 'util'
-coffeelint = require 'coffeelint'
-{reporter} = require 'coffeelint-stylish'
+fs = require 'fs'
+path = require 'path'
 
 module.exports = (grunt) ->
 
@@ -11,6 +10,13 @@ module.exports = (grunt) ->
   process.env.NODE_ENV = if 'build' in grunt.cli.tasks then 'production' else 'development'
 
   isProduction = process.env.NODE_ENV is 'production'
+
+  for file in fs.readdirSync path.resolve 'assets', 'images'
+    continue unless /\.svg$/.test file
+    data = fs.readFileSync (path.resolve 'assets', 'images', file), 'utf-8'
+    (svgs or svgs = {})[file.replace /\.svg$/, ''] = data
+
+  console.log svgs
 
   grunt.registerTask '_build_js', [
     'coffee', 'coffeelint'
@@ -86,6 +92,8 @@ module.exports = (grunt) ->
           ext: '.html'
         }]
       options:
+        data:
+          svgs: svgs
         pretty: !isProduction
 
     requirejs:

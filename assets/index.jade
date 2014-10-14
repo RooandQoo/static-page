@@ -1,168 +1,187 @@
-extends templates/layout
+doctype html
+html
 
-block body
-  .background
-  .top.section-top
-    .container.text-center
-      .main-image
-        .enter-button
-    .navbar(role='navigation')
-      .container
-        a(href="http://binzo.co/" target="blank")
-          img(src="images/logo_bnzk.png" alt="bnzklogo" class="logo-bnzk")
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width,initial-scale=1.0,minimal-ui')
+  title TITLE
+  link(rel='stylesheet', href='./application.css')
+  link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Montserrat:400,700')
 
-  .main
-    section#intro.section-intro
+body
+  .wrap
+
+    .background
+
+    .top.section-top
       .container.text-center
-        h3 Introduction
-        hr
-        p 食欲は芸術を凌駕する。
-        .info
+        .main-image
+          .enter-button
+            .fork!= svgs.fork
+            .dish!= svgs.dish
+              .enter!= svgs.enter
+            .knife!= svgs.knife
+      .navbar(role='navigation')
+        .container
+          a(href="http://binzo.co/" target="blank")
+            img(src="images/logo_bnzk.png" alt="bnzklogo" class="logo-bnzk")
+
+    .main
+      section#intro.section-intro
+        .container.text-center
+          h3 Introduction
+          hr
+          p 食欲は芸術を凌駕する。
+          .info
+            table
+              tr
+                td.left  タイトル
+                td.right 秋奏色フルコース
+              tr
+                td.left パッケージ
+                td.right 13 tracks/1disc(プレス)
+              tr
+                td.left 価格
+                td.right 1,000 JPY
+              tr
+                td.left 頒布
+                td.right M3-2014秋 A-15a "SKETCH UP! Rec."
+
+      section#track.section-track
+        .container.text-center
+          h3 TrackList
+          hr
           table
             tr
-              td.left  タイトル
-              td.right 秋奏色フルコース
+              td Alinut
+              td Space Curry Roll
+              td カレーパン
             tr
-              td.left パッケージ
-              td.right 13 tracks/1disc(プレス)
+              td かめりあ
+              td his valueless world gave us the one ray of light --- it is called soba.
+              td そば
             tr
-              td.left 価格
-              td.right 1,000 JPY
+              td DJ Shimamura
+              td Fish & Chips
+              td つまみ
             tr
-              td.left 頒布
-              td.right M3-2014秋 A-15a "SKETCH UP! Rec."
+              td lapix
+              td Mushroom Breaks
+              td マッシュルーム
+            tr
+              td n.o.d.e
+              td Envelocker
+              td 餃子
+            tr
+              td DOMISO
+              td Lonely Doll
+              td パスタ
+            tr
+              td Ryosuke Tachibana
+              td Shalimar
+              td インドカレー
+            tr
+              td Atomic
+              td Crispy & juicy
+              td 鶏の唐揚げ
+            tr
+              td t+pazolite
+              td Magic Raffles
+              td カレー
+            tr
+              td aran
+              td MAGMA ROCK
+              td ハンバーグ
+            tr
+              td C-Show
+              td K
+              td 炭の焼肉 圭
+            tr
+              td SAISEN TURN
+              td サンマ
+              td 秋刀魚の塩焼き
+            tr
+              td ChankoDiving
+              td homePosition
+              td お米
 
-    section#track.section-track
-      .container.text-center
-        h3 TrackList
-        hr
-        table
-          tr
-            td Alinut
-            td Space Curry Roll
-            td カレーパン
-          tr
-            td かめりあ
-            td his valueless world gave us the one ray of light --- it is called soba.
-            td そば
-          tr
-            td DJ Shimamura
-            td Fish & Chips
-            td つまみ
-          tr
-            td lapix
-            td Mushroom Breaks
-            td マッシュルーム
-          tr
-            td n.o.d.e
-            td Envelocker
-            td 餃子
-          tr
-            td DOMISO
-            td Lonely Doll
-            td パスタ
-          tr
-            td Ryosuke Tachibana
-            td Shalimar
-            td インドカレー
-          tr
-            td Atomic
-            td Crispy & juicy
-            td 鶏の唐揚げ
-          tr
-            td t+pazolite
-            td Magic Raffles
-            td カレー
-          tr
-            td aran
-            td MAGMA ROCK
-            td ハンバーグ
-          tr
-            td C-Show
-            td K
-            td 炭の焼肉 圭
-          tr
-            td SAISEN TURN
-            td サンマ
-            td 秋刀魚の塩焼き
-          tr
-            td ChankoDiving
-            td homePosition
-            td お米
+      section#staff.section-staff
+        .container.text-center
+          h3 Staff
+          hr
+          table
+            tr
+              td: span Composer
+              td Alinut(<a href="hoge" target="blank">Digital Logics</a>)
+            tr
+              td
+              td aran
+            tr
+              td
+              td Atomic
+            tr
+              td
+              td C-Show
+            tr
+              td
+              td ChankoDiving
+            tr
+              td
+              td DJ Genki
+            tr
+              td
+              td DJ Shimamura
+            tr
+              td
+              td lapix
+            tr
+              td
+              td n.o.d.e
+            tr
+              td
+              td Ryosuke Tachibana
+            tr
+              td
+              td SAISEN TURN(REDALiCE, Masayoshi Minoshima)
+            tr
+              td
+              td t+pazolite
+            tr
+              td
+              td かめりあ
+            tr
+              td: span Jacket Illust
+              td もみじ真魚(<a href="hoge" target="blank">Digital Logics</a>)
+            tr
+              td: span Produce & Design
+              td Hitomasu Modoru
+            tr
+              td: span n.o.d.e
+              td Norikawa Kensuke(Compose)
+            tr
+              td
+              td Re:Quantizer(Lyric)
+            tr
+              td
+              td RIKA(Vocal)
+            tr
+              td
+              td BUTSU(Vocal)
+            tr
+              td: span Mastering
+              td DJ Noriken
+            tr
+              td: span Special Thanks
+              td Ryo Asakura
+            tr
+              td
+              td Kasdf
 
-    section#staff.section-staff
-      .container.text-center
-        h3 Staff
-        hr
-        table
-          tr
-            td: span Composer
-            td Alinut(<a href="hoge" target="blank">Digital Logics</a>)
-          tr
-            td
-            td aran
-          tr
-            td
-            td Atomic
-          tr
-            td
-            td C-Show
-          tr
-            td
-            td ChankoDiving
-          tr
-            td
-            td DJ Genki
-          tr
-            td
-            td DJ Shimamura
-          tr
-            td
-            td lapix
-          tr
-            td
-            td n.o.d.e
-          tr
-            td
-            td Ryosuke Tachibana
-          tr
-            td
-            td SAISEN TURN(REDALiCE, Masayoshi Minoshima)
-          tr
-            td
-            td t+pazolite
-          tr
-            td
-            td かめりあ
-          tr
-            td: span Jacket Illust
-            td もみじ真魚(<a href="hoge" target="blank">Digital Logics</a>)
-          tr
-            td: span Produce & Design
-            td Hitomasu Modoru
-          tr
-            td: span n.o.d.e
-            td Norikawa Kensuke(Compose)
-          tr
-            td
-            td Re:Quantizer(Lyric)
-          tr
-            td
-            td RIKA(Vocal)
-          tr
-            td
-            td BUTSU(Vocal)
-          tr
-            td: span Mastering
-            td DJ Noriken
-          tr
-            td: span Special Thanks
-            td Ryo Asakura
-          tr
-            td
-            td Kasdf
+      section#footer
+        .container.text-center
+          span &copy; #{1900 + new Date().getYear()} Binzokomegane Girls Union
 
-    section#footer
-      .container.text-center
-        span &copy; #{1900 + new Date().getYear()} Binzokomegane Girls Union
-
+  if process.env.NODE_ENV == 'production'
+    script(src='./application.js')
+  else
+    script(data-main='./config.js', src='./vendor/requirejs/require.js')

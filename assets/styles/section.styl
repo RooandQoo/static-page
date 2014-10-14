@@ -7,7 +7,7 @@
   right 0
   bottom 0
   overflow hidden
-  background-image url(./images/main.jpg)
+  background-image url('./images/main.png')
   background-repeat no-repeat
   background-size cover
   background-position 50% 50%
@@ -20,17 +20,48 @@
     position absolute
     top 50%
     left 50%
-    width 300px
+    width 320px
     height 150px
     margin-top (-1 * @height / 2)
     margin-left (-1 * @width / 2)
-    background green
-    cursor pointer
+
+    .fork
+      margin-right -92px
+      transform rotate(45deg)
+      path
+        fill white
+    .knife
+      margin-left -92px
+      transform rotate(-45deg)
+      path
+        fill white
     &:hover
-      background-color lighten(green, 20%)
+      .fork, .knife
+        margin 0
+        transform rotate(0deg)
+      .enter
+        fill white
+      path
+        fill black
+    .fork, .knife, .dish, .enter
+      position relative
+      display inline-block
+      width 100px
+      transition all 0.36s cubic-bezier(0.215, 0.61, 0.355, 1)
+    .fork, .knife
+      z-index 5
+    .enter
+      position absolute
+      top 0
+      left 0
+    .dish, .enter
+      width 80px
+    svg
+      width 100%
+      path
+        transition fill 0.36s cubic-bezier(0.215, 0.61, 0.355, 1)
 
 .section-intro
-  table
   tr
     line-height 50px
-
+    cursor pointer
