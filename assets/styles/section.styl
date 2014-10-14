@@ -16,6 +16,10 @@
   &.transition
     transition margin 0.24s cubic-bezier(0.215, 0.61, 0.355, 1)
 
+  img.logo
+    width 500px
+    margin-top 100px
+
   .enter-button
     position absolute
     top 50%
@@ -69,9 +73,14 @@
 .section-track
   table
     th.track-number
+      height 80px
       text-align center
       padding-right 20px
+    td.info
+      vertical-align bottom
     td.border
-      border-width 1px
+      border-width 0 0 2px 0
       border-color $text_color
       border-style dotted
+    td.food
+      vertical-align top
