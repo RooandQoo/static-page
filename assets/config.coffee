@@ -1,7 +1,7 @@
 'use strict'
 
 require.config
-  baseUrl: '/config'
+  baseUrl: './config'
 
   paths:
     'moment': '../vendor/moment'

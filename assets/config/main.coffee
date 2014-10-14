@@ -3,15 +3,18 @@
 define ['moment', 'jquery', 'lodash'], (moment, $, _) ->
 
   $ ->
-    $top = $ '#top'
+    $top = $ '.top'
     $btn = $ '.enter-button'
     $navbar = $ '.navbar'
 
     $btn.on 'click', ->
+      height = $top.height() - $navbar.height()
       $top.css
-        bottom: $top.height() - $navbar.height()
+        marginTop: -1 * height
+        marginBottom: height
       console.log 'clicked'
 
     $navbar.on 'click', ->
       $top.css
-        bottom: 0
+        marginTop: 0
+        marginBottom: 0
