@@ -4,9 +4,9 @@ require.config
   baseUrl: './config'
 
   paths:
-    'moment': '../vendor/moment'
-    'jquery': '../vendor/jquery'
-    'lodash': '../vendor/lodash'
-    'bootstrap': '../vendor/bootstrap'
+    'moment': '../vendor/moment/moment'
+    'jquery': '../vendor/jquery/dist/jquery'
+    'lodash': '../vendor/lodash/dist/lodash'
+    'bootstrap': '../vendor/bootstrap/dist/js/bootstrap'
 
 require ['main']
