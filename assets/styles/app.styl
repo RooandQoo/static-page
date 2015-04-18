@@ -74,8 +74,11 @@ hr
     background-repeat no-repeat
 
 .wrap
+  position fixed
   padding-top 50px
   height 100%
+  width 100%
+  overflow-x hidden
 
   section
     display table
@@ -97,22 +100,21 @@ hr
   .title
     float left
 
-  .info
-    paddin-top 30px
+    h3
+      font-size 56px
+      margin-top 10px
 
-  h3
-    font-size 56px
+    .attention p
+      font-size 12px
+      margin-bottom 0
+
+  .info
+    padding-top 30px
+
+    p
+      margin-bottom 5px
 
 .footer
   clear both
-  font-size 12px;
-
-table
-  margin 0 auto
-  td.left
-    text-align left
-    span
-      background-color $text_color
-      color cornsilk
-  td.right
-    text-align right
+  font-size 12px
+  padding 30px 0 5px 0

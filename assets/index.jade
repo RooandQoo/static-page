@@ -27,17 +27,24 @@ body
       .title.col-4-md.col-md-offset-2
         p n.o.d.e 1st e.p
         h3 Bloomy Colors
-        h4 incl. inst ver.
+        p incl. inst ver.
+        .attention
+          p *ジャケットのボーカルはイメージであり実在のボーカルとは異なりなります。
+          p この度は神坂琉菜さんにご協力していただきました。
 
       .info.col-4-md.col-md-offset-7
-        p 2015.04.26 M3 2015 Spring
-        p か21b 'SKETCH UP! Recordings'
-        p 500 yen
-        p TANO*C STORE / DICERSE DIRECT
+        p Date: 2015.04.26 M3 2015 Spring
+        p Place: か21b 'SKETCH UP! Recordings'
+        p Price: 500 yen
+        p Shop: TANO*C STORE / DIVERSE DIRECT
 
       .footer
         .container.text-center
           span &copy; #{1900 + new Date().getYear()} Binzokomegane Girls Union
+div(style='display:none')
+  .inline_content
+    h3 TRACK LIST
+
 
   if process.env.NODE_ENV == 'production'
     script(src='./application.js')
