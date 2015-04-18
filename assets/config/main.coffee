@@ -1,25 +1,10 @@
 'use strict'
 
-define ['moment', 'jquery', 'lodash'], (moment, $, _) ->
+define ['moment', 'jquery', 'lodash', 'jparallax'], (moment, $, _) ->
 
   $ ->
-    $top = $ '.top'
-    $btn = $ '.enter-button'
-    $navbar = $ '.navbar'
+    jQuery('.parallax-layer').parallax({
+      mouseport: jQuery("#port")
+    })
 
-    hideCover = (toggle) ->
-      height = $top.height() - $navbar.height()
-      $top
-        .toggleClass 'transition', toggle
-        .css marginTop: -1 * height, marginBottom: height
 
-    showCover = ->
-      $top
-        .addClass 'transition'
-        .css marginTop: 0, marginBottom: 0
-
-    ($ window).on 'resize', ->
-      hideCover false
-    $btn.on 'click', ->
-      hideCover true
-    $navbar.on 'click', showCover
