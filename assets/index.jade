@@ -4,7 +4,7 @@ html
 head
   meta(charset='utf-8')
   meta(name='viewport', content='width=device-width,initial-scale=1.0,minimal-ui')
-  title 秋奏色フルコース - Binzokomegane Girls Union
+  title Bloomy Colors - Binzokomegane Girls Union
   link(rel='stylesheet', href='./application.css')
   link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Montserrat:400,700')
 
@@ -13,285 +13,30 @@ body
 
     .background
 
-    .top.section-top
-      .container.text-center
-        .row
-          img.logo(src='./images/akaneiro_logo.png')
-        .main-image
-          .enter-button
-            .fork!= svgs.fork
-            .dish!= svgs.dish
-              .enter!= svgs.enter
-            .knife!= svgs.knife
-      .navbar(role='navigation')
-        .container
-          a(href="http://binzo.co/" target="blank")
-            img(src="images/logo_bnzk.png" alt="bnzklogo" class="logo-bnzk")
-          .tweet
-            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    .navbar(role='navigation')
+      .container
+        a(href="http://binzo.co/" target="blank")
+          img(src="images/logo_bnzk.png" alt="bnzklogo" class="logo-bnzk")
+        .tweet
+          <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
     .main
-      section#intro.section-intro
-        .container.text-center
-          h2 た〜んと、召し上がれ♥
-          p.catch SKETCH UP! Rec.と瓶底眼鏡女子同盟のタッグによる、まるで炊き込みご飯のような彩りを放つコンピレーション！<br>各々が食からインスピレーションを受け、目から、耳からあなたの胃袋を刺激する！
-          img.jacket.img-responsive(src="images/jacket.png")
-          .info
-            table
-              tr
-                td.left: span  タイトル
-                td.right 秋奏色フルコース
-              tr
-                td.left: span パッケージ
-                td.right 13 tracks/1disc(プレス)
-              tr
-                td.left: span 価格
-                td.right 1,000 JPY
-              tr
-                td.left: span 頒布
-                td.right M3-2014秋 A-15a "SKETCH UP! Rec."
-              tr.shop
-                td.left
-                td.right: a(href="http://www.tanocstore.net/shop/item_detail?category_id=130924&item_id=1504291") TANO*C STORE
-              tr.shop
-                td.left: span ショップ
-                td.right: a(href="http://diverse-direct.com/binzokomegane-girls-union/sbcd-001/") DIVERSE DIRECT
-              tr.shop
-                td.left
-                td.right: a(href="https://www.melonbooks.co.jp/detail/detail.php?product_id=108374") メロンブックス
+      .title.col-4-md.col-md-offset-2
+        p n.o.d.e 1st e.p
+        h3 Bloomy Colors
+        h4 incl. inst ver.
 
-      section#track.section-track
-        .container.text-center
-          h2 TrackList
-          hr
-          table
-            tr
-              th.track-number(rowspan=3) 一.
-              td.info.left Alinut
-              td.info.right Space Curry Roll
-            tr
-              td.border(colspan=2) 
-            tr
-              td.food.right(colspan=2) カレーパン
-            tr
-              th.track-number(rowspan=3) 二.
-              td.info.left Camellia
-              td.info.right his valueless world gave us the one ray of light --- it is called soba.
-            tr
-              td.border(colspan=2) 
-            tr
-              td.food.right(colspan=2) 蕎麦
-            tr
-              th.track-number(rowspan=3) 三.
-              td.info.left DJ Shimamura
-              td.info.right Fish & Chips
-            tr
-              td.border(colspan=2) 
-            tr
-              td.food.right(colspan=2) おつまみ
-            tr
-              th.track-number(rowspan=3) 四.
-              td.info.left lapix
-              td.info.right Mushroom Breaks
-            tr
-              td.border(colspan=2) 
-            tr
-              td.food.right(colspan=2) マッシュルーム
-            tr
-              th.track-number(rowspan=3) 五.
-              td.info.left n.o.d.e
-              td.info.right Envelocker
-            tr
-              td.border(colspan=2) 
-            tr
-              td.food.right(colspan=2) 餃子
-            tr
-              th.track-number(rowspan=3) 六.
-              td.info.left DOMISO
-              td.info.right Lonely Doll
-            tr
-              td.border(colspan=2) 
-            tr
-              td.food.right(colspan=2) パスタ
-            tr
-              th.track-number(rowspan=3) 七.
-              td.info.left Ryosuke Tachibana
-              td.info.right Shalimar
-            tr
-              td.border(colspan=2) 
-            tr
-              td.food.right(colspan=2) インドカレー
-            tr
-              th.track-number(rowspan=3) 八.
-              td.info.left t+pazolite
-              td.info.right Magic Raffles
-            tr
-              td.border(colspan=2) 
-            tr
-              td.food.right(colspan=2) カレー
-            tr
-              th.track-number(rowspan=3) 九.
-              td.info.left Atomic
-              td.info.right Crispy & juicy
-             tr
-              td.border(colspan=2) 
-            tr
-              td.food.right(colspan=2) 鶏の唐揚げ
-            tr
-              th.track-number(rowspan=3) 十.
-              td.info.left aran
-              td.info.right MAGMA ROCK
-             tr
-              td.border(colspan=2) 
-            tr
-              td.food.right(colspan=2) ハンバーグ
-            tr
-              th.track-number(rowspan=3) 十一.
-              td.info.left C-Show
-              td.info.right K
-             tr
-              td.border(colspan=2) 
-            tr
-              td.food.right(colspan=2) 焼肉
-            tr
-              th.track-number(rowspan=3) 十二.
-              td.info.left SAISEN TURN
-              td.info.right サンマ
-             tr
-              td.border(colspan=2) 
-            tr
-              td.food.right(colspan=2) 秋刀魚
-            tr
-              th.track-number(rowspan=3) 十三.
-              td.info.left ChankoDiving
-              td.info.right homePosition
-             tr
-              td.border(colspan=2) 
-            tr
-              td.food.right(colspan=2) 白米
-          p
-            誤植のお知らせ：<br>
-            ブックレット4P目 正: 8品目: t+pazolite - Magic Raffles / 9品目: Atomic - Crispy & juicy となります。ご迷惑をお掛けして申し訳ございません。
-          <iframe width="80%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/172717126&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-  
-      section#staff.section-staff
-        .container.text-center
-          h2 Staff
-          hr
-          table
-            tr
-              td.left: span Composer
-              td.right Alinut
-              td.left.belonging
-                a(href="http://digitallogics.net/" target="blank") Digital Logics
-            tr
-              td
-              td.right aran
-              td.left.belonging
-                a(href="http://unitone.fm/" target="blank") Unitone
-            tr
-              td
-              td.right Atomic
-              td.left.belonging
-                a(href="http://technomy.net/" target="blank") TECHNOMY
-            tr
-              td
-              td.right C-Show
-              td.left.belonging
-                a(href="https://soundcloud.com/michi_akira" target="blank") Lick Dom Records
-            tr
-              td
-              td.right ChankoDiving
-              td.left.belonging
-                a(href="http://cubegrams.com/" target="blank") cubegrams
-            tr
-              td
-              td.right DJ Shimamura
-              td.left.belonging
-                a(href="http://www.djshimamura.com/" target="blank") DYNASTY RECORDS
-            tr
-              td
-              td.right DOMISO
-              td.left.belonging
-            tr
-              td
-              td.right lapix
-              td.left.belonging
-            tr
-              td
-              td.right n.o.d.e
-              td.left.belonging
-                a(href="http://binzo.co/" target="blank") 瓶底眼鏡女子同盟
-            tr
-              td
-              td.right Ryosuke Tachibana
-              td.left.belonging
-                a(href="http://www.massivecirclez.com/" target="blank") Massive Circlez
-            tr
-              td
-              td.right SAISEN TURN
-              td.left.belonging
-                a(href="http://saisenturn.net/" target="blank") SAISEN TURN
-            tr
-              td
-              td.right t+pazolite
-              td.left.belonging
-                a(href="http://c-h-s.me/" target="blank") C.H.S
-            tr
-              td
-              td.right かめりあ
-              td.left.belonging
-                a(href="http://cametek.jp/" target="blank") かめるかめりあ
-            tr
-              td.left: span Jacket Illust
-              td.right もみじ真魚
-              td.left.belonging
-                a(href="http://komorebi-note.com/" target="blank") こもれびのーと
-            tr
-              td.left: span Produce & Design
-              td.right Hitomasu Modoru
-              td.left.belonging
-                a(href="http://zuzu.velvet.jp/" target="blank") 00union
-            tr
-              td.left: span n.o.d.e
-              td.right Norikawa Kensuke(Compose)
-            tr
-              td
-              td.right Re:Quantizer(Lyric)
-            tr
-              td
-              td.right RIKA(Vocal)
-            tr
-              td
-              td.right BUTSU(Vocal)
-            tr
-              td.left: span DOMISO
-              td.right DJ Genki(Compose)
-              td.left.belonging
-                a(href="http://djgenki.net/" target="blank") SKETCH UP! Recordings
-            tr
-              td
-              td.right Yukacco(Vocal)
-            tr
-              td.left: span Mastering
-              td.right DJ Noriken
-              td.left.belonging
-                a(href="http://djnoriken.com/" target="blank") SKETCH UP! Recordings
-            tr
-              td.left: span Special Thanks
-              td.right Ryo Asakura
-              td.left.belonging
-                a(href="http://seventh.graphics" target="blank") Seventhgraphics
-            tr
-              td
-              td.right Kasdf
-              td.left.belonging 瓶底眼鏡女子同盟
-  
-      section#footer
+      .info.col-4-md.col-md-offset-7
+        p 2015.04.26 M3 2015 Spring
+        p か21b 'SKETCH UP! Recordings'
+        p 500 yen
+        p TANO*C STORE / DICERSE DIRECT
+
+      .footer
         .container.text-center
           span &copy; #{1900 + new Date().getYear()} Binzokomegane Girls Union
-  
+
   if process.env.NODE_ENV == 'production'
     script(src='./application.js')
   else

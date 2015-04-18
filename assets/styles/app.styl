@@ -25,12 +25,11 @@ a
   left 0
   right 0
   bottom 0
-  background-image url('./images/main2.png')
+  background-image url('./images/001.jpg')
   background-repeat no-repeat
   background-size cover
   background-position 50% 50%
   z-index 0
-  opacity 0.4
 
 hr
   border none
@@ -43,12 +42,11 @@ hr
   position absolute
   left 0
   right 0
-  bottom 0
+  top 0
   margin 0
   height 50px
   line-height 50px
   border-width 0
-  background darken(darkslategray, 70%)
   border-radius 0
   transition background 0.18s $easing
 
@@ -66,7 +64,6 @@ hr
     margin 0
     padding 0
     vertical-align middle
-
 
   .session .dropdown-toggle
     padding-left 36px
@@ -88,9 +85,25 @@ hr
       vertical-align middle
 
 .main
-  position relative
-  height 100%
+  position absolute
+  left 0
+  right 0
+  bottom 0
+  margin 0
   z-index 10
+
+  .title
+    float left
+
+  .info
+    paddin-top 30px
+
+  h3
+    font-size 56px
+
+.footer
+  clear both
+  font-size 12px;
 
 table
   margin 0 auto
