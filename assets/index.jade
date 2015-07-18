@@ -11,7 +11,7 @@ head
 body
   .wrap
 
-    #port
+    .port
       .background.parallax-layer
 
     .navbar(role='navigation')
@@ -19,7 +19,7 @@ body
         a(href="http://binzo.co/" target="blank")
           img(src="images/logo_bnzk.png" alt="bnzklogo" class="logo-bnzk")
         .tweet
-          a(href="https://twitter.com/share" class="twitter-share-button") Tweet
+          a(href="https://twitter.com/share" class="twitter-share-button" data-url="http://binzo.co/node/" data-text="n.o.d.e 1st e.p - Bloomy Colors") Tweet
           script(type='text/javascript').
             !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
@@ -41,10 +41,10 @@ body
       .footer
         .container.text-center
           span &copy; #{1900 + new Date().getYear()} Binzokomegane Girls Union
-div(style='display:none')
-  .inline_content
-    h3 TRACK LIST
 
+    .box.col-md-offset-2
+      a(href="https://www.youtube.com/embed/Bq__mlcE_gc?rel=0" class="youtube")
+        img(src="images/pv.jpg" alt="" onmouseover="this.src='images/pv_hover.jpg'" onmouseout="this.src='images/pv.jpg'")
 
   if process.env.NODE_ENV == 'production'
     script(src='./application.js')

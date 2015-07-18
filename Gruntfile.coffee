@@ -23,7 +23,7 @@ module.exports = (grunt) ->
   ]
 
   grunt.registerTask '_build_css', [
-    'stylus', 'csslint'
+    'stylus'
   ]
 
   grunt.registerTask '_build', [
