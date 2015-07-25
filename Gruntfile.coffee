@@ -1,8 +1,7 @@
 'use strict'
 
-util = require 'util'
-coffeelint = require 'coffeelint'
-{reporter} = require 'coffeelint-stylish'
+fs = require 'fs'
+path = require 'path'
 
 module.exports = (grunt) ->
 
@@ -17,7 +16,7 @@ module.exports = (grunt) ->
   ]
 
   grunt.registerTask '_build_css', [
-    'stylus', 'csslint'
+    'stylus'
   ]
 
   grunt.registerTask '_build', [
