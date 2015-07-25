@@ -10,14 +10,152 @@ html, body
   font-weight 400
   font-size 14px
   line-height 1.5
-  font-family Montserrat, 'Helvetica Neue', Helvetica, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Hiragino Sans GB', 'メイリオ', Meiryo, Sans-Serif
+  font-family Comfortaa, 'Helvetica Neue', Helvetica, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Hiragino Sans GB', 'メイリオ', Meiryo, Sans-Serif
   text-rendering optimizelegibility
   font-smoothing antialiased
 
+h2
+  font-size 36px
+
+h3
+  font-size 30px
+  margin-bottom 20px
+
+h4
+  font-size 25px
 
 a
   outline none !important
 
+.background
+  position absolute
+  background-image url('./images/bg.jpg')
+  background-repeat no-repeat
+  background-size cover
+  background-attachment fixed
+  background-position 50%
+  z-index 0
+
+.top
+  p
+    font-size 20px
+    line-height 1.5em
+
+.bg-details
+  background-image url('./images/book.png')
+  background-repeat no-repeat
+  background-size cover
+  background-position 50%
+
+.details
+  padding 340px 0 200px 300px
+  font-weight bold
+
+  table
+    margin 0 auto
+    font-size 16px
+
+    td
+      padding 5px 0
+
+    td.right
+      text-align right
+      padding-left 5px
+
+    td.left
+      text-align left
+      padding-right 5px
+
+  p.jacket-link
+    margin-top 15px
+
+.bg-ways
+  background-image url('./images/ticket.png')
+  background-repeat no-repeat
+  background-size cover
+  background-position 50%
+
+.ways
+  padding 200px 250px 200px 0
+  font-weight bold
+
+  table
+    margin 0 auto
+    font-size 16px
+
+    td.index
+      background-repeat no-repeat
+      background-size contain
+      background-position 50%
+      padding 15px
+
+    td.tr1
+      background-image url('./images/01.png')
+    td.tr2
+      background-image url('./images/02.png')
+    td.tr3
+      background-image url('./images/03.png')
+    td.tr4
+      background-image url('./images/04.png')
+    td.tr5
+      background-image url('./images/05.png')
+    td.tr6
+      background-image url('./images/06.png')
+    td.tr7
+      background-image url('./images/07.png')
+    td.tr8
+      background-image url('./images/08.png')
+    td.tr9
+      background-image url('./images/09.png')
+    td.tr10
+      background-image url('./images/10.png')
+
+    td.title
+      text-align left
+      padding-left 5px
+
+    td.compose
+      text-align right
+      padding-left 30px
+
+    td.illust
+      text-align left
+      padding-left 5px
+
+.xfade
+  width 100%
+  padding 300px 0
+
+  h2, h3, h4
+    text-shadow 1px 1px 1px ivory
+
+  .demo
+    width 540px
+    height 360px
+    margin-top 20px
+
+.bg-xfade
+  background-image url('./images/xfade_bg.jpg')
+  background-repeat no-repeat
+  background-size cover
+  background-position 50%
+
+.staff
+  padding 200px 0
+
+  table
+    margin 0 auto
+    font-size 16px
+    line-height 1.8em
+
+    td.left
+      text-align left
+
+    td.right
+      text-align right
+
+.special
+  padding 250px 0
 
 hr
   border none
@@ -44,17 +182,29 @@ hr
       box-shadow none
       border-top-color transparent
 
+.twitter-button
+  position absolute
+  top 20px
+  left 55px
+  z-index 2
 
 .wrap
-  padding-top 50px
   height 100%
-
 
   section
     display table
+    padding-top 50px
     width 100%
     min-height 100%
 
     .container
       display table-cell
+      padding 0
       vertical-align middle
+
+    .footer
+      background-color aquamarine
+      margin-top 100px
+      padding-top 20px
+      padding-bottom 20px
+

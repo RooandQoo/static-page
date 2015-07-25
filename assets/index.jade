@@ -1,22 +1,282 @@
 extends templates/layout
 
 block body
-  section#m
+  section#top.background
     .container.text-center
-      h3 M
-      hr
+      .top
+        img.logo(src='images/logo.png')
+        img.chara(src='images/chara.png')
+        hr
+        p
+          | 双子の妖精「ルーアンドクー」、次なる舞台はヨーロッパ！？
+          br
+          | サークル「ラクエスク」夏の新作は
+          br
+          | ふたりが欧州9カ国を旅する情景を
+          br
+          | 音楽とイラストで描いた一冊の『アルバム』。
+        h4 至福の旅のおもいでを、あなたにも。
+        h3 C88 2015.08.16(SUN)
+        h4 西む-42ab
+        h4 RaqesQue
+        h4 +
+        h4 Binzokomegane Girls Union
 
-  section#e
-    .container.text-center
-      h3 E
-      hr
+      .details.bg-details
+        h2 Details
+        table
+          tr
+            td.left Num.
+            td.right RQCD-002
+          tr
+            td.left Spec.
+            td.right
+              | Include 10 songs
+              br
+              | 3つ折りデジパック仕様
+          tr
+            td.left Price.
+            td.right 1,000 yen(会場)
+          tr
+            td.left Place.
+            td.right
+              | C88 2015.08.16(SUN)
+              br
+              | 西む-42ab
+              br
+              | RaqesQue + Binzokomegane Girls Union
+          tr
+            td.left Shop.
+            td.right In preparing...
+        p.jacket-link
+          a(href='images/jacket.png' target='blank').
+            Jacket Image Download!!
 
-  section#n
-    .container.text-center
-      h3 N
-      hr
+      .ways.bg-ways
+        h2 Ways
+        table
+          tr
+            td.index.tr1 01.
+            td.title Departure -Euphoric Tourism-
+            td(colspan='2' style='padding-left:30px') stereoberry
+          tr
+            td.index.tr2 02.
+            td.title Götterdämmerung
+            td.compose stereoberry
+            td.illust | 栗葉
+          tr
+            td.index.tr3 03.
+            td.title Whirlwind
+            td.compose 源屋
+            td.illust | 十恵
+          tr
+            td.index.tr4 04.
+            td.title float on flowers
+            td.compose DJ Noriken
+            td.illust | ほまれ
+          tr
+            td.index.tr5 05.
+            td.title ReQuerdo
+            td.compose Hommarju
+            td.illust | みずは
+          tr
+            td.index.tr6 06.
+            td.title Stay with you
+            td.compose KaSa
+            td.illust | 斉藤アキ
+          tr
+            td.index.tr7 07.
+            td.title fluido
+            td.compose m@sumi
+            td.illust | ナツメサク
+          tr
+            td.index.tr8 08.
+            td.title Gruess Gott Tochter
+            td.compose Atomic
+            td.illust | 郁
+          tr
+            td.index.tr9 09.
+            td.title Non Venda Rally
+            td.compose t+pazolite
+            td.illust | はちぷよ
+          tr
+            td.index.tr10 10.
+            td.title Auroras
+            td.compose Junk
+            td.illust | pen
 
-  section#u
-    .container.text-center
-      h3 U
-      hr
+      .xfade.bg-xfade
+        h2 XFade Demo
+        iframe(class="demo" src="https://www.youtube.com/embed/WvKYQc3WXx4?rel=0" frameborder="0" allowfullscreen)
+        h4 produced by murAta Yuzi
+
+      .staff
+        h2 Staff
+        hr
+        table
+          tr
+            td.left Illustration
+            td.right ナツメサク(ラクエスク)
+          tr
+            td
+            td.right
+              | 栗葉(
+              a(href="http://krieq.net/" target="blank")
+                | krieq
+              | )
+          tr
+            td
+            td.right
+              | 十恵(
+              a(href="http://saraca12.tumblr.com/" target="blank")
+                | saraca*
+              | )
+          tr
+            td
+            td.right
+              | ほまれ(ほまでり労災病院 | 
+              a(href="http://www.pixiv.net/member.php?id=1159992" target="blank")
+                | pixiv
+              | )
+          tr
+            td
+            td.right
+              | みずは(
+              a(href="http://meg13.com/" target="blank")
+                | Megacycle13
+              | )
+          tr
+            td
+            td.right
+              | 斉藤アキ(
+              a(href="http://tricolor.applemaniax.com/" target="blank")
+                | phanky berry beats
+              | )
+          tr
+            td
+            td.right 
+              | 郁(
+              a(href="https://twitter.com/1_9_5" target="blank")
+                | twitter
+              | )
+          tr
+            td
+            td.right
+              | はちぷよ(
+              a(href="http://8puyo.blog21.fc2.com/" target="blank")
+                | m*8
+              | )
+          tr
+            td
+            td.right
+              | pen(
+              a(href="http://thisisa-pendes.tumblr.com/" target="blank")
+                | pencase
+              | )
+          tr
+            td.left Compose
+            td.right
+              | stereoberry(
+              a(href="http://stereoberry.sakura.tv/" target="blank")
+                | ルリイロギンガ
+              | )
+          tr
+            td
+            td.right
+              | 源屋(
+              a(href="http://minamotrance.com/" target="blank")
+                | MINAMOTRANCE
+              | )
+          tr
+            td
+            td.right
+              | DJ Noriken(
+              a(href="http://djnoriken.com/" target="blank")
+                | Sketch UP! Recordings
+              | )
+          tr
+            td
+            td.right
+              | Hommarju(S2TB Recording | 
+              a(href="https://soundcloud.com/hommarju" target="blank")
+                | SC
+              | )
+          tr
+            td
+            td.right
+              | KaSa(
+              a(href="https://soundcloud.com/kasa_dtmer" target="blank")
+                | SoundCloud
+              | )
+          tr
+            td
+            td.right
+              | m@sumi(
+              a(href="https://soundcloud.com/m-sumi" target="blank")
+                | SoundCloud
+              | )
+          tr
+            td
+            td.right
+              | Atomic(
+              a(href="http://technomy.net/" target="blank")
+                | TECHNOMY
+              | )
+          tr
+            td
+            td.right
+              | t+pazolite(
+              a(href="http://c-h-s.me/" target="blank")
+                | C.H.S
+              | )
+          tr
+            td
+            td.right
+              | Junk(
+              a(href="http://blog.livedoor.jp/junk_life5/" target="blank")
+                | Junk-Channel
+              | )
+          tr
+            td.left Design
+            td.right
+              | ヒトマスモドル(
+              a(href="http://zuzu.velvet.jp/oounion/" target="blank")
+                | 00union
+              | )
+          tr
+            td
+            td.right
+              | coda(
+              a(href="http://www.antennapedia.net/" target="blank")
+                | Antp
+              | )
+          tr
+            td.left PV
+            td.right
+              | murAta Yuzi(multieulogy | 
+              a(href="https://www.behance.net/m_Yz" target="blank")
+                | Behance
+              | )
+          tr
+            td.left Mastering
+            td.right DJ Noriken
+          tr
+            td.left Thanks
+            td.right ひかがみひなみ
+          tr
+            td
+            td.right 蜜乃サナ
+          tr
+            td.left Produce/???
+            td.right るーく(ラクエスク)
+
+      .special
+        h2 Special
+        hr
+
+        h3 Coming soon...
+
+      .footer
+        span &copy 2015 RaqesQue
+
+

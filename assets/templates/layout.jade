@@ -2,36 +2,18 @@ doctype html
 html
   head
     meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width,initial-scale=1.0,minimal-ui')
-    title TITLE
+    meta(name='viewport', content='width=device-width,maximam-scale=1.0,minimal-ui')
+    title Euphoric Tourism - RaqesQue
     link(rel='stylesheet', href='/application.css')
-    link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Montserrat:400,700')
-
+    link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Comfortaa:400,700')
   body
+    .twitter-button
+      a(href='https://twitter.com/share' class="twitter-share-button") Tweet
+      script(type='text/javascript').
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 
-    .navbar.navbar-inverse.navbar-fixed-top(role='navigation')
-      .container
-        .navbar-header
-          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand(href='#') TITLE
-        .collapse.navbar-collapse
-          ul.nav.navbar-nav.navbar-right
-            li: a(href='#m') M
-            li: a(href='#e') E
-            li: a(href='#n') N
-            li: a(href='#u') U
-
-    .wrap
-
+   .wrap
       block body
-
-      section#footer
-        .container.text-center
-          span &copy; #{1900 + new Date().getYear()} Dummy
 
     if process.env.NODE_ENV == 'production'
       script(src='/application.js')
