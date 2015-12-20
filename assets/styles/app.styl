@@ -10,7 +10,8 @@ html, body
   font-weight 400
   font-size 14px
   line-height 1.5
-  font-family Comfortaa, 'Helvetica Neue', Helvetica, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Hiragino Sans GB', 'メイリオ', Meiryo, Sans-Serif
+  color #fff
+  font-family 'Josefin Slab', 'Helvetica Neue', Helvetica, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Hiragino Sans GB', 'メイリオ', Meiryo, Sans-Serif
   text-rendering optimizelegibility
   font-smoothing antialiased
 
@@ -29,26 +30,30 @@ a
 
 .background
   position absolute
-  background-image url('./images/bg.jpg')
+  background-image url('./images/bg.svg')
   background-repeat no-repeat
   background-size cover
   background-attachment fixed
   background-position 50%
   z-index 0
 
-.top
-  p
-    font-size 20px
-    line-height 1.5em
 
-.bg-details
-  background-image url('./images/book.png')
-  background-repeat no-repeat
-  background-size cover
-  background-position 50%
+@media(max-width:768px)
+  .background
+    position absolute
+    background-image url('./images/bg_sp.jpg')
+    background-repeat no-repeat
+    background-size cover
+    background-attachment fixed
+    background-position 50%
+    z-index 0
+
+
+.top
+  padding 200px 0
 
 .details
-  padding 340px 0 200px 300px
+  padding 300px 0
   font-weight bold
 
   table
@@ -69,14 +74,36 @@ a
   p.jacket-link
     margin-top 15px
 
-.bg-ways
-  background-image url('./images/ticket.png')
-  background-repeat no-repeat
-  background-size cover
-  background-position 50%
+@media(max-width:768px)
+  .details
+    padding 450px 0
 
-.ways
-  padding 200px 250px 200px 0
+.bg-disc1
+  background-color #050000
+
+  .tracklist-disc1
+    padding 100px
+
+  .soundcloud-disc1
+    color #fff
+    float right
+    margin-top 200px
+    margin-right 300px
+
+.bg-disc2
+  background-color #faffff
+  color #000
+
+  .tracklist-disc2
+    padding 100px
+
+  .soundcloud-disc2
+    color #fff
+    float left
+    margin-top 200px
+    margin-left 300px
+
+.disco
   font-weight bold
 
   table
@@ -88,27 +115,6 @@ a
       background-size contain
       background-position 50%
       padding 15px
-
-    td.tr1
-      background-image url('./images/01.png')
-    td.tr2
-      background-image url('./images/02.png')
-    td.tr3
-      background-image url('./images/03.png')
-    td.tr4
-      background-image url('./images/04.png')
-    td.tr5
-      background-image url('./images/05.png')
-    td.tr6
-      background-image url('./images/06.png')
-    td.tr7
-      background-image url('./images/07.png')
-    td.tr8
-      background-image url('./images/08.png')
-    td.tr9
-      background-image url('./images/09.png')
-    td.tr10
-      background-image url('./images/10.png')
 
     td.title
       text-align left
@@ -122,23 +128,17 @@ a
       text-align left
       padding-left 5px
 
-.xfade
-  width 100%
-  padding 300px 0
+@media(max-width:768px)
+  .disco
+    padding-top 50px
 
-  h2, h3, h4
-    text-shadow 1px 1px 1px ivory
+  .bg-disc1 .soundcloud-disc1
+    float none
+    margin 30px 0
 
-  .demo
-    width 540px
-    height 360px
-    margin-top 20px
-
-.bg-xfade
-  background-image url('./images/xfade_bg.jpg')
-  background-repeat no-repeat
-  background-size cover
-  background-position 50%
+  .bg-disc2 .soundcloud-disc2
+    float none
+    margin 30px 0
 
 .staff
   padding 200px 0
@@ -156,6 +156,22 @@ a
 
 .special
   padding 250px 0
+
+  h2
+    margin-bottom 200px
+
+.party
+  background-image url('./images/party.jpg')
+  background-repeat no-repeat
+  background-size cover
+  background-attachment fixed
+  background-position 50%
+  padding 350px 0
+
+@media(max-width:768px)
+  .party
+    background none
+    padding 350px 0
 
 hr
   border none
@@ -203,8 +219,7 @@ hr
       vertical-align middle
 
     .footer
-      background-color aquamarine
-      margin-top 100px
+      background-color black
       padding-top 20px
       padding-bottom 20px
 
